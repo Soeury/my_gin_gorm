@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!--  通常 form 表单都是用 post 请求   -->
+    <!--  当form表单中存在 type="submit" 按钮时 , 在页面中点击 , 会再次发送一次请求 使用 post 方法发送给 /login  -->
+    <!--  这样后端就会再次接收到一次请求  一次请求对应一次响应 -->
+    <form action="/login" method="post" novalidate autocomplete="off">
+
+        <label for="username">username:</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <br>
+
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <br>
+
+        <input type="submit" >
+
+    </form>
+    
+</body>
+</html>
